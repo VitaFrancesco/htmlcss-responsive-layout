@@ -25,12 +25,16 @@ ol,ul{
 
 /* body */
 body{
-    padding: 0 24px;
     font-family: "Montserrat", sans-serif;
 }
 
 
+
+
 /* header */
+header{
+    background-color: white;
+}
 /* navbar */
 .logo {
     font-family: "Nerko One", cursive;
@@ -43,6 +47,126 @@ body{
 }
 
 
+/* main, layout rules */
+main{
+    background-color: #F6F5F3;
+}
+
+body > *{
+    padding: 0 24px;
+}
+
+.container{
+    max-width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* hero */
+.category{
+    text-transform: uppercase;
+    color: #A89F9C;
+    font-size: 18px;
+}
+
+.card{
+    background-color: white;
+}
+
+.hero .title{
+    font-size: 30px;
+    color: #4E3969;
+}
+
+.hero .title h1{
+    display: inline-block;
+    font-size: 30px;
+}
+
+.title span{
+    display: none;
+}
+
+.hero img{
+    width: 100%;
+}
+
+.card h3{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.summary-list{
+    padding: 42px 38px 54px;
+    box-shadow: 5px 5px 5px #e7e6e5;
+}
+
+.summary-list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.hero .row{
+    flex-direction: column;
+    gap: 34px;
+}
+
+.banner-ads{
+    display: none;
+}
+
+.card p, .social-bar p{
+    font-size: 18px;
+}
+
+/* icone cosial bar */
+.social-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon{
+    padding: 16px 18px;
+    font-size: 18px;
+    background-color: white;
+    box-shadow: 5px 5px 5px #e7e6e5;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.facebook{
+    color: #1A77F3;
+}
+.twitter{
+    color: #009EFF;
+}
+.instagram{
+    color: #E05380;
+}
+.pinterest{
+    color: #E62222;
+}
+.youtube{
+    color: #E62222;
+}
+
+.social-name{
+    display: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+/* utilities */
+.col-12{
+    width: 100%;
+}
+
 
 /* approccio mobile first*/
 /* media per tablet */
@@ -50,9 +174,79 @@ body{
     .logo{
         text-align: left;
     }
+
+    .title span{
+        display: inline-block;
+        font-size: 40px;
+    }
+
+    .hero .title h1{
+        font-size: 40px;
+    }
+
+    /* hero section */
+    .social-bar{
+        gap: 24px;
+    }
+
+    .social-icon{
+        flex-grow: 1;
+    }
+
+    .banner-ads{
+        display: block;
+    }
+
+    .summary-list ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 36px 0;
+        
+    }
+
+    .summary-list li{
+        width: calc((100% /12) * 4);
+    }
+
+    .summary-list li:last-child{
+        width: calc((100% /12) * 8);
+    }
 }
 
 /* media per computer */
-@media (min-width:767.99px){
-    
+@media (min-width:991.99px){
+    .title span{
+        font-size: 55px;
+    }
+
+    .hero .title h1{
+        font-size: 55px;
+    }
+
+    /* hero section */
+    .social-name{
+        display: inline-block;
+    }
+
+    .card{
+        display: flex;
+    }
+
+    .hero-image{
+        width: calc((100% /12) * 8);
+    }
+
+    .summary-list{
+        width: calc((100% /12) * 4);
+    }
+
+    .summary-list ul{
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .hero .summary-list li{
+        width: 100%;
+    }
 }
