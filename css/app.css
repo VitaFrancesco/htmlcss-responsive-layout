@@ -168,6 +168,36 @@ body > *{
     color: black;
 }
 
+/* presentation */
+.presentation{
+    padding-top: 44px;
+}
+
+.presentation h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+.presentation img{
+    width: 380px;
+    display: block;
+    margin: auto;
+    margin-bottom: 26px;
+}
+
+.presentation p{
+    line-height: 40px;
+}
+
+.style-div{
+    width: 100px;
+    border: #F7972E 1px solid;
+    margin-bottom: 26px;
+}
+
 /* utilities */
 .col-12{
     width: 100%;
@@ -233,6 +263,22 @@ body > *{
 
     .summary-list li:last-child{
         width: calc((100% /12) * 8);
+    }
+
+    /* presentation */
+    .presentation{
+        padding-top: 52px;
+    }
+
+    .style-div{
+        margin-bottom: 38px;
+    }
+
+    .presentation img{
+        float: inline-start;
+        margin-right: 14px;
+        padding-top: 12px;
+        margin-bottom: 0;
     }
 }
 
