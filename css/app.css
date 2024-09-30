@@ -97,6 +97,10 @@ body > *{
     display: none;
 }
 
+.hero-image{
+    aspect-ratio: 755/420;
+}
+
 .hero img{
     width: 100%;
 }
@@ -354,6 +358,7 @@ footer a{
 
     .hero-image{
         width: calc((100% /12) * 8);
+        aspect-ratio: 755/420;
     }
 
     .summary-list{
